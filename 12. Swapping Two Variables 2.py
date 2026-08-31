@@ -25,4 +25,4 @@ print("The value of num2 is : ", num2)
 
 
 # The above code was for swapping two numbers without taking a temporary, third variable
-# By taking third variable, code is easy and simple however the above algorithm is good
+# By taking third variable, code is easy and simple however the above algorithm is good.
