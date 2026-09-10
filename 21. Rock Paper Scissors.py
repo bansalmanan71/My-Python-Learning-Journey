@@ -14,31 +14,34 @@ f=input("Enter: ")
 print(b.capitalize())
 g=input("Enter: ")
 print(f"{c.capitalize()}\n\n\n")
+e=e.strip().lower()
+f=f.strip().lower()
+g=g.strip().lower()
 
 
 p1=0
 p2=0
 
 
-if (e.lower()=="rock" and a=="scissors") or (e.lower()=="paper" and a=="rock") or (e.lower()=="scissors" and a=="paper"):
+if (e=="rock" and a=="scissors") or (e=="paper" and a=="rock") or (e=="scissors" and a=="paper"):
     p1=p1+1
-elif (e.lower()==a):
+elif (e==a):
     p1=p1
 else:
     p2=p2+1
 
 
-if (f.lower()=="rock" and b=="scissors") or (f.lower()=="paper" and b=="rock") or (f.lower()=="scissors" and b=="paper"):
+if (f=="rock" and b=="scissors") or (f=="paper" and b=="rock") or (f=="scissors" and b=="paper"):
     p1=p1+1
-elif (f.lower()==b):
+elif (f==b):
     p1=p1
 else:
     p2=p2+1
 
 
-if (g.lower()=="rock" and c=="scissors") or (g.lower()=="paper" and c=="rock") or (g.lower()=="scissors" and c=="paper"):
+if (g=="rock" and c=="scissors") or (g=="paper" and c=="rock") or (g=="scissors" and c=="paper"):
     p1=p1+1
-elif (g.lower()==c):
+elif (g==c):
     p1=p1
 else:
     p2=p2+1
