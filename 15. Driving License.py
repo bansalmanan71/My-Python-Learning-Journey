@@ -1,11 +1,10 @@
 age=int(input("Enter your age: "))
-license=(input("Do you have a Driving License? (Yes or No): ")).strip().capitalize()
-aadharcard=(input("Do you have aadhar card? (Yes or No): ")).strip().capitalize()
-# Note - By using .strip() all the spaces from ahead and behind are striped and, True and False are not Case-Sensitive by using .capitalize(), itconverts inputs like "true", "TRUE", or "True" into "True".
-#license = bool(license)
+has_license=(input("Do you have a Driving License? (Yes or No): ")).strip().lower() in ["yes", "y", "ye", "true", "yea", "yeah", "ya"]
+has_aadharcard=(input("Do you have aadhar card? (Yes or No): ")).strip().lower() in ["yes", "y", "ye", "true", "yea", "yeah", "ya"]
+# Note - By using .strip() all the spaces from ahead and behind are striped
 #aadharcard = bool(aadharcard)
-if (age>=18 and license=="Yes" and aadharcard=="Yes"):
-    print("You are eligible to Drive")
+if (age>=18 and has_license and has_aadharcard):
+    print("You can drive.")
 else:
-    print("You are not eligible for driving")
+    print("You can NOT drive.")
     
