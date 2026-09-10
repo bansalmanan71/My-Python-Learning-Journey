@@ -9,36 +9,36 @@ c=random.choice(rps)
 print("This is a program for playing rock paper and scissors with computer.")
 print("You have to write either rock, paper or scissors")
 e=input("Enter: ")
-print(a)
+print(a.capitalize())
 f=input("Enter: ")
-print(b)
+print(b.capitalize())
 g=input("Enter: ")
-print(f"{c}\n\n\n")
+print(f"{c.capitalize()}\n\n\n")
 
 
 p1=0
 p2=0
 
 
-if (e=="rock" and a=="scissors") or (e=="paper" and a=="rock") or (e=="scissors" and a=="paper"):
+if (e.lower()=="rock" and a=="scissors") or (e.lower()=="paper" and a=="rock") or (e.lower()=="scissors" and a=="paper"):
     p1=p1+1
-elif (e==a):
+elif (e.lower()==a):
     p1=p1
 else:
     p2=p2+1
 
 
-if (f=="rock" and b=="scissors") or (f=="paper" and b=="rock") or (f=="scissors" and b=="paper"):
+if (f.lower()=="rock" and b=="scissors") or (f.lower()=="paper" and b=="rock") or (f.lower()=="scissors" and b=="paper"):
     p1=p1+1
-elif (f==b):
+elif (f.lower()==b):
     p1=p1
 else:
     p2=p2+1
 
 
-if (g=="rock" and c=="scissors") or (g=="paper" and c=="rock") or (g=="scissors" and c=="paper"):
+if (g.lower()=="rock" and c=="scissors") or (g.lower()=="paper" and c=="rock") or (g.lower()=="scissors" and c=="paper"):
     p1=p1+1
-elif (g==c):
+elif (g.lower()==c):
     p1=p1
 else:
     p2=p2+1
